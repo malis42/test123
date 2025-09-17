@@ -16,6 +16,6 @@ workflows:
         value: redocly-academy-demo-1
     steps:
       - stepId: get-status-{tenantId}-step2
-        operationId: $sourceDescriptions.mock-api.getTenantStatus
+        operationId: $sourceDescriptions.mock-api.getTenantStatus2
         successCriteria:
           - condition: $statusCode == 200
