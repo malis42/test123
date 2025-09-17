@@ -5,9 +5,9 @@ info:
 sourceDescriptions:
   - name: mock-api
     type: openapi
-    url: ../openapi2.yaml
+    url: ../openapi.yaml
 workflows:
-  - workflowId: get-status-{tenantId}-workflow
+  - workflowId: get-status-{tenantId}-workflow2
     summary: Testing Deno API - Tenant Status API
     description: This is description of Arazzo file that tests Deno API
     parameters:
