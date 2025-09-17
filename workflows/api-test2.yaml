@@ -1,0 +1,21 @@
+arazzo: 1.0.1
+info:
+  title: Tenant Status API
+  version: 1.0.0
+sourceDescriptions:
+  - name: mock-api
+    type: openapi
+    url: ../openapi.yaml
+workflows:
+  - workflowId: get-status-{tenantId}-workflow2
+    summary: Testing Deno API - Tenant Status API2
+    description: This is description of Arazzo file that tests Deno API
+    parameters:
+      - in: path
+        name: tenantId
+        value: redocly-academy-demo-1
+    steps:
+      - stepId: get-status-{tenantId}-step2
+        operationId: $sourceDescriptions.mock-api.getTenantStatus2
+        successCriteria:
+          - condition: $statusCode == 200
