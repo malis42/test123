@@ -5,7 +5,7 @@ info:
 sourceDescriptions:
   - name: mock-api
     type: openapi
-    url: ../openapi.yaml
+    url: ../openapi2.yaml
 workflows:
   - workflowId: get-status-{tenantId}-workflow
     summary: Testing Deno API - Tenant Status API
