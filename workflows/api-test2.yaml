@@ -8,7 +8,7 @@ sourceDescriptions:
     url: ../openapi.yaml
 workflows:
   - workflowId: get-status-{tenantId}-workflow2
-    summary: Testing Deno API - Tenant Status API
+    summary: Testing Deno API - Tenant Status API2
     description: This is description of Arazzo file that tests Deno API
     parameters:
       - in: path
